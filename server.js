@@ -41,8 +41,6 @@ const parser = multer({ storage: storage, fileFilter: fileFileter });
 // add other middleware
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(morgan("dev"));
-
 app.post("/upload", parser.array("image"), function (req, res) {
   res.json(req.files);
 });
