@@ -2,11 +2,7 @@ const express = require("express");
 const multer = require("multer");
 const cloudinary = require("cloudinary").v2;
 const { CloudinaryStorage } = require("multer-storage-cloudinary");
-const cors = require("cors");
 const bodyParser = require("body-parser");
-const morgan = require("morgan");
-const path = require("path");
-const { extname } = require("path");
 require("dotenv").config();
 
 // create express app
